@@ -1,36 +1,36 @@
 # Amazon_sales_ETL
 
-##Project Overview
+## Project Overview
 
 This project implements an end-to-end ETL (Extract, Transform, Load) pipeline for Amazon sales data. The data is processed through various stages, leveraging cloud-based storage, transformation tools, and a data warehouse for analysis.
 
-##Pipeline Workflow
+## Pipeline Workflow
 
-Data Extraction & Storage
+## Data Extraction & Storage
 
 Raw sales data is extracted and stored in Azure Blob Storage containers.
 
-ETL Pipeline Creation
+## ETL Pipeline Creation
 
 A structured ETL pipeline is designed to automate data movement and transformations.
 
-Loading into Data Lake
+## Loading into Data Lake
 
 The extracted data is ingested into an Azure Data Lake for scalable storage.
 
-Data Transformation using Databricks
+## Data Transformation using Databricks
 
 Transformation tasks, such as data cleaning, feature engineering, and aggregations, are performed using Databricks (Apache Spark).
 
-Loading Processed Data Back to Data Lake
+## Loading Processed Data Back to Data Lake
 
 The transformed data is stored back in Azure Data Lake for further processing.
 
-Loading into Azure Synapse Analytics
+## Loading into Azure Synapse Analytics
 
 Final transformed data is loaded into Azure Synapse Analytics for SQL-based querying and analysis.
 
-Technologies Used
+## Technologies Used
 
 Azure Blob Storage (for raw data storage)
 
