@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 7",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP 3\n    Category,\n    SUM(Sales_Amount) AS Total_Sales_Amount\nFROM category_wise_order_analysis\nGROUP BY Category\nORDER BY Total_Sales_Amount DESC;  ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "salesdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

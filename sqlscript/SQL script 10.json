@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 10",
+	"properties": {
+		"content": {
+			"query": "WITH Sales_Percentage AS (\n    SELECT Category, \n           Free, XS, S, M, L, XL, XXL, \"3XL\", \"4XL\", \"5XL\", \"6XL\",\n           (Free + XS + S + M + L + XL + XXL + \"3XL\" + \"4XL\" + \"5XL\" + \"6XL\") AS Total_Sales\n    FROM size_sales_quantity\n)\nSELECT Category, \n       (XS * 100.0 / Total_Sales) AS XS_Percentage,\n       (S * 100.0 / Total_Sales) AS S_Percentage,\n       (M * 100.0 / Total_Sales) AS M_Percentage,\n       (L * 100.0 / Total_Sales) AS L_Percentage,\n       (XL * 100.0 / Total_Sales) AS XL_Percentage,\n       (XXL * 100.0 / Total_Sales) AS XXL_Percentage\nFROM Sales_Percentage\nORDER BY Total_Sales DESC;\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "salesdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

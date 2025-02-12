@@ -1,0 +1,251 @@
+{
+	"name": "size_sales_amount",
+	"properties": {
+		"Name": "size_sales_amount",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "salesdatabase",
+			"DatabaseId": null
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "Category",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 8000,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "Free",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "XS",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "S",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "M",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "L",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "XL",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "XXL",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "3XL",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "4XL",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "5XL",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				},
+				{
+					"Name": "6XL",
+					"Description": null,
+					"OriginDataTypeName": {
+						"TypeName": "double",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "double"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "a7611b52-1ac7-4b58-8bef-8a77257a8107",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+				"FormatType": "parquet",
+				"SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+				"Properties": {
+					"path": "abfss://amazonsales-data@amazonsale.dfs.core.windows.net/transform_data/size_sales_amount.parquet/part-00000-tid-6724510734321551236-b7957635-160d-4a92-abe1-75d645ab8d82-129-1.c000.snappy.parquet",
+					"FormatTypeSetToDatabaseDefault": false
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://amazonsales-data@amazonsale.dfs.core.windows.net/transform_data/size_sales_amount.parquet/part-00000-tid-6724510734321551236-b7957635-160d-4a92-abe1-75d645ab8d82-129-1.c000.snappy.parquet",
+				"Properties": {
+					"LinkedServiceName": "salesanalysis-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": false
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"Description": "",
+			"DisplayFolderInfo": "{\"name\":\"Others\",\"colorCode\":\"\"}",
+			"PrimaryKeys": "",
+			"spark.sql.sources.provider": "parquet",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Category\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Free\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"XS\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"S\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"M\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"L\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"XL\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"XXL\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"3XL\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"4XL\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"5XL\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"6XL\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "3e07fa48-4788-41f9-8963-3e5eee0c52bf",
+		"Description": ""
+	},
+	"type": "TABLE"
+}

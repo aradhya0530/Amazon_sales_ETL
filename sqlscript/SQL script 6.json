@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 6",
+	"properties": {
+		"content": {
+			"query": "SELECT Category, \n       (XS / (XS + S + M + L + XL + XXL + \"3XL\" + \"4XL\" + \"5XL\" + \"6XL\")) * 100 AS XS_Percentage,\n       (S / (XS + S + M + L + XL + XXL + \"3XL\" + \"4XL\" + \"5XL\" + \"6XL\")) * 100 AS S_Percentage,\n       (M / (XS + S + M + L + XL + XXL + \"3XL\" + \"4XL\" + \"5XL\" + \"6XL\")) * 100 AS M_Percentage\nFROM size_sales_amount\nWHERE Category = 'Set';\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "salesdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

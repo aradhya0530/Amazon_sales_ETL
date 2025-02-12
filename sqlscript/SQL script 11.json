@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 11",
+	"properties": {
+		"content": {
+			"query": "SELECT \n    Category,\n    AVG(Free) AS Avg_Free,\n    AVG(XS) AS Avg_XS,\n    AVG(S) AS Avg_S,\n    AVG(M) AS Avg_M,\n    AVG(L) AS Avg_L,\n    AVG(XL) AS Avg_XL,\n    AVG(XXL) AS Avg_XXL,\n    AVG([3XL]) AS Avg_3XL,  -- Enclose 3XL in square brackets\n    AVG([4XL]) AS Avg_4XL,  -- Enclose 4XL in square brackets\n    AVG([5XL]) AS Avg_5XL,  -- Enclose 5XL in square brackets\n    AVG([6XL]) AS Avg_6XL   -- Enclose 6XL in square brackets\nFROM size_sales_quantity\nGROUP BY Category\nORDER BY Category;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "salesdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

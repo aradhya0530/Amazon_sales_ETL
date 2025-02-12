@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 5",
+	"properties": {
+		"content": {
+			"query": "SELECT Category, \n       SUM(Free + XS + S + M + L + XL + XXL + \"3XL\" + \"4XL\" + \"5XL\" + \"6XL\") AS Total_Sales\nFROM size_sales_amount\nWHERE Category <> 'Saree'\nGROUP BY Category\nORDER BY Total_Sales DESC;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "salesdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

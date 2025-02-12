@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 8",
+	"properties": {
+		"content": {
+			"query": "SELECT \n    SUM(Free) AS Free_Total,\n    SUM(XS) AS XS_Total,\n    SUM(S) AS S_Total,\n    SUM(M) AS M_Total,\n    SUM(L) AS L_Total,\n    SUM(XL) AS XL_Total,\n    SUM(XXL) AS XXL_Total,\n    SUM(\"3XL\") AS \"3XL_Total\",\n    SUM(\"4XL\") AS \"4XL_Total\",\n    SUM(\"5XL\") AS \"5XL_Total\",\n    SUM(\"6XL\") AS \"6XL_Total\"\nFROM size_sales_quantity;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "salesdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

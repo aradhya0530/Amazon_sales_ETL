@@ -1,0 +1,25 @@
+{
+	"name": "salesdatabase",
+	"properties": {
+		"Name": "salesdatabase",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://amazonsales-data@amazonsale.dfs.core.windows.net/salesdatabase",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "salesanalysis-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 4,
+		"ObjectId": "577c4bbe-0f56-4ecd-a9fc-6b0aefbf5477"
+	},
+	"type": "DATABASE"
+}
